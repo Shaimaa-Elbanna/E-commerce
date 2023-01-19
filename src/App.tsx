@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {createHashRouter,RouterProvider} from 'react-router-dom'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import MainLayOut from './Pages/MainLayOut';
+import { ShoppingCartContextProvider } from './Context/ShoppingCartContext';
 
 function App() {
+
+  const router = createHashRouter([
+    {path:'/',element:<MainLayOut/>,children:[
+      {path:'/',element:<Home/>},
+      {path:'home',element:<Home/>},
+      {path:'about',element:<About/>},
+    ]}
+    
+  ])
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+<ShoppingCartContextProvider>
+    <RouterProvider router={router}/>
+    </ShoppingCartContextProvider>
+    </>
   );
 }
 

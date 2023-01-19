@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name":"phone",
+        "price":100.60,
+        "imgUrl":"/img/work-1.jpg"
+        
+
+    },
+    {
+        "id":2,
+        "name":"salad",
+        "price":10.60,
+        "imgUrl":"/img/post-2.jpg"
+        
+
+    },
+    {
+        "id":3,
+        "name":"desk corner",
+        "price":2000.990,
+        "imgUrl":"/img/work-2.jpg"
+        
+
+    },
+    {
+        "id":4,
+        "name":"coffe",
+        "price":11.60,
+        "imgUrl":"/img/work-4.jpg"
+        
+
+    },
+    {
+        "id":5,
+        "name":"flowers",
+        "price":20.60,
+        "imgUrl":"/img/work-5.jpg"
+        
+
+    },
+    {
+        "id":6,
+        "name":"book",
+        "price":30.680,
+        "imgUrl":"/img/work-6.jpg"
+        
+
+    }
+]
